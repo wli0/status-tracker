@@ -17,7 +17,7 @@ function App() {
 
   async function fetchClient(){
     try{
-      const response = await fetch("http://localhost:5001/client");
+      const response = await fetch("https://status-tracker-backend.onrender.com/client");
 
       if (!response.ok){
         throw new Error("Failed to fetch client");

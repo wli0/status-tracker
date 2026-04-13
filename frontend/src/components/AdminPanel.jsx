@@ -21,7 +21,7 @@ function AdminPanel({ client, onStatusUpdated }){
     }
 
     try{
-      const response = await fetch("http://localhost:5001/client/status", {
+      const response = await fetch("https://status-tracker-backend.onrender.com/client/status", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
