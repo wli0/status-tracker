@@ -2,8 +2,6 @@
 
 import React from "react";
 
-import React from "react";
-
 function Dashboard({ client }) {
   const statusClass = `status-badge status-${client.status
     .toLowerCase()
