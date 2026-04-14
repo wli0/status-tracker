@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f3f5fa;
+  color: #1f2937;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 28px 20px 60px;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1f2937;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.stack-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 32px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.card-panel h2 {
+  margin: 0 0 26px;
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.value {
+  font-size: 1.15rem;
+  color: #1f2937;
+  text-align: right;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.received {
+  background: #dbeafe;
+  color: #1f2937;
+}
+
+.in-review {
+  background: #fef3c7;
+  color: #1f2937;
+}
+
+.approved {
+  background: #dcfce7;
+  color: #1f2937;
+}
+
+.rejected {
+  background: #fee2e2;
+  color: #1f2937;
+}
+
+.needs-info {
+  background: #ede9fe;
+  color: #1f2937;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.form-section select {
+  width: 100%;
+  height: 64px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 0 20px;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #1f2937;
+  outline: none;
+  margin-bottom: 22px;
+}
+
+.form-section button {
+  width: 100%;
+  height: 66px;
+  border: none;
+  border-radius: 14px;
+  background: #3f63dd;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  opacity: 0.96;
+}
+
+.toast {
+  margin-bottom: 18px;
+  background: #1f2937;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .card-panel {
+    padding: 22px 20px;
+  }
+
+  .card-panel h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .value {
+    text-align: left;
+  }
+
+  .status-pill {
+    min-width: 0;
+  }
+}
